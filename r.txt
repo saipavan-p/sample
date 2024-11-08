@@ -1,0 +1,13 @@
+python add_supplemental_benefit.py --db-column sup_vision --pbp-file PBP_Benefits_2025/pbp_b17_eye_exams_wear.txt --pbp-column-name pbp_b17a_bendesc_yn &&
+python add_supplemental_benefit.py --db-column sup_dental --pbp-file PBP_Benefits_2025/pbp_b4_emerg_urgent.txt --pbp-column-name pbp_b4c_bendesc_ehc --find-in-mask --mask-position 2 &&
+python add_supplemental_benefit.py --db-column sup_transportation --pbp-file PBP_Benefits_2025/pbp_b10_amb_trans.txt --pbp-column-name pbp_b10b_bendesc_yn &&
+python add_supplemental_benefit.py --db-column sup_fitness --pbp-file PBP_Benefits_2025/pbp_b14_preventive.txt --pbp-column-name pbp_b14c_bendesc_ehc --find-in-list --find-value 14c4 &&
+python add_supplemental_benefit.py --db-column sup_ww_emergency --pbp-file PBP_Benefits_2025/pbp_b4_emerg_urgent.txt --pbp-column-name pbp_b4c_bendesc_ehc --find-in-mask --mask-position 2 &&
+python add_supplemental_benefit.py --db-column sup_telehealth --pbp-file PBP_Benefits_2025/pbp_b7_health_prof.txt --pbp-column-name pbp_b7j_bendesc_yn &&
+python add_supplemental_benefit.py --db-column sup_otc_drugs --pbp-file PBP_Benefits_2025/pbp_b13_other_services.txt --pbp-column-name pbp_b13b_bendesc_otc &&
+python add_supplemental_benefit.py --db-column sup_in_home_support --pbp-file PBP_Benefits_2025/pbp_b14_preventive.txt --pbp-column-name pbp_b14c_bendesc_ehc --find-in-list --find-value 14c21 &&
+python add_supplemental_benefit.py --db-column sup_home_safety --pbp-file PBP_Benefits_2025/pbp_b14_preventive.txt --pbp-column-name pbp_b14c_bendesc_ehc --find-in-list --find-value 14c8 &&
+python add_supplemental_benefit.py --db-column sup_emergency_resp_device --pbp-file PBP_Benefits_2025/pbp_b14_preventive.txt --pbp-column-name pbp_b14c_bendesc_ehc --find-in-list --find-value 14c11 &&
+python add_supplemental_benefit.py --db-column include_drug_coverage --pbp-file PBP_Benefits_2025/pbp_mrx.txt --pbp-column-name mrx_drug_ben_yn &&
+python add_supplemental_benefit.py --db-column sup_hearing --pbp-file PBP_Benefits_2025/pbp_b18_hearing_exams_aids.txt --pbp-column-name pbp_b18a_bendesc_yn &&
+python add_supplemental_benefit.py --db-column drug_deductible --pbp-file PBP_Benefits_2025/pbp_mrx.txt --pbp-column-name mrx_alt_ded_amount --numeric
